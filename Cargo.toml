@@ -1,0 +1,11 @@
+[package]
+name = "polyglot"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cozy-chess = { version = "0.3.4", optional = true }
+
+[features]
+default = ["cozy-chess"]
+cozy-chess = ["dep:cozy-chess"]
